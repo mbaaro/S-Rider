@@ -1,5 +1,7 @@
 {
   "name": "S-Rider",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

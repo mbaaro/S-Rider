@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  <ion-title>S-Rider</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button size="small" color="primary" shape="round" [routerLink]="['/view-requests']" [routerDirection]="forward">Offer service</ion-button>
+  <ion-button size="small" color="primary" shape="round" [routerLink]="['/service-request']" [routerDirection]="forward">Get Service</ion-button>
+  <ion-button size="small" color="primary" shape="round" [routerLink]="['/ad-request']" [routerDirection]="forward">My Hustle</ion-button>
+  <ion-button size="small" color="primary" shape="round" [routerLink]="['/app-help']" [routerDirection]="forward">Feedback</ion-button>
+
+<hr>
+<ion-label position="floating">Change Town:</ion-label>
+<ion-select [(ngModel)]="town" (ionChange)="filtertown()">
+<ion-select-option value="j">i</ion-select-option>
+<ion-select-option value="b">j</ion-select-option>
+
+</ion-select>
+<hr>
+</ion-content>
